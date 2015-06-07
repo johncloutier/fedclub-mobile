@@ -14,6 +14,7 @@
 		18D610C11B2473DE00765015 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D610C01B2473DE00765015 /* Images.xcassets */; };
 		18D610C41B2473DE00765015 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D610C21B2473DE00765015 /* LaunchScreen.xib */; };
 		18D610D01B2473DE00765015 /* Fed_Club_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610CF1B2473DE00765015 /* Fed_Club_MobileTests.swift */; };
+		18D610DB1B24742000765015 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18D610D91B24742000765015 /* Database.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		18D610C91B2473DE00765015 /* Fed Club MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fed Club MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D610CE1B2473DE00765015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D610CF1B2473DE00765015 /* Fed_Club_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fed_Club_MobileTests.swift; sourceTree = "<group>"; };
+		18D610DA1B24742000765015 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		18D610A91B2473DE00765015 = {
 			isa = PBXGroup;
 			children = (
+				18D610D91B24742000765015 /* Database.xcdatamodeld */,
 				18D610B41B2473DE00765015 /* Fed Club Mobile */,
 				18D610CC1B2473DE00765015 /* Fed Club MobileTests */,
 				18D610B31B2473DE00765015 /* Products */,
@@ -217,6 +220,7 @@
 			files = (
 				18D610BC1B2473DE00765015 /* SecondViewController.swift in Sources */,
 				18D610B81B2473DE00765015 /* AppDelegate.swift in Sources */,
+				18D610DB1B24742000765015 /* Database.xcdatamodeld in Sources */,
 				18D610BA1B2473DE00765015 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +429,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18D610D91B24742000765015 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18D610DA1B24742000765015 /* Database.xcdatamodel */,
+			);
+			currentVersion = 18D610DA1B24742000765015 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18D610AA1B2473DE00765015 /* Project object */;
 }
