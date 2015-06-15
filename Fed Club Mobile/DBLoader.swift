@@ -16,7 +16,7 @@ class DBLoader: NSObject{
     
     override init(){
         let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
-        svc = appDelegate.dbService!
+        svc = appDelegate.dbService
     }
     
     func loadDB(){
