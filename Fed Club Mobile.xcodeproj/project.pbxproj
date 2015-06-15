@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181299C91B2EEC6A004D01E2 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299C81B2EEC6A004D01E2 /* DBService.swift */; };
+		181299CB1B2EED6F004D01E2 /* BaseBLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299CA1B2EED6F004D01E2 /* BaseBLO.swift */; };
+		181299CE1B2EF190004D01E2 /* DBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299CD1B2EF190004D01E2 /* DBLoader.swift */; };
+		181299E41B2F0A03004D01E2 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181299E21B2F0A03004D01E2 /* Database.xcdatamodeld */; };
+		181299EE1B2F0AAD004D01E2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299E61B2F0AAD004D01E2 /* Address.swift */; };
+		181299EF1B2F0AAD004D01E2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299E71B2F0AAD004D01E2 /* Person.swift */; };
+		181299F01B2F0AAD004D01E2 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299E81B2F0AAD004D01E2 /* Contact.swift */; };
+		181299F11B2F0AAD004D01E2 /* RSVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299E91B2F0AAD004D01E2 /* RSVP.swift */; };
+		181299F21B2F0AAD004D01E2 /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299EA1B2F0AAD004D01E2 /* Membership.swift */; };
+		181299F31B2F0AAD004D01E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299EB1B2F0AAD004D01E2 /* Event.swift */; };
+		181299F41B2F0AAD004D01E2 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299EC1B2F0AAD004D01E2 /* Attendance.swift */; };
+		181299F51B2F0AAD004D01E2 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299ED1B2F0AAD004D01E2 /* CreditCard.swift */; };
+		181299F71B2F0E22004D01E2 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299F61B2F0E22004D01E2 /* EventDetailVC.swift */; };
+		181299F91B2F0E3F004D01E2 /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299F81B2F0E3F004D01E2 /* EventListVC.swift */; };
+		181299FD1B2F1EE3004D01E2 /* RSVPListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */; };
 		18D610B81B2473DE00765015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610B71B2473DE00765015 /* AppDelegate.swift */; };
-		18D610BA1B2473DE00765015 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610B91B2473DE00765015 /* FirstViewController.swift */; };
-		18D610BC1B2473DE00765015 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610BB1B2473DE00765015 /* SecondViewController.swift */; };
+		18D610BC1B2473DE00765015 /* PersonListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610BB1B2473DE00765015 /* PersonListVC.swift */; };
 		18D610BF1B2473DE00765015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D610BD1B2473DE00765015 /* Main.storyboard */; };
 		18D610C11B2473DE00765015 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D610C01B2473DE00765015 /* Images.xcassets */; };
 		18D610C41B2473DE00765015 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D610C21B2473DE00765015 /* LaunchScreen.xib */; };
 		18D610D01B2473DE00765015 /* Fed_Club_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610CF1B2473DE00765015 /* Fed_Club_MobileTests.swift */; };
-		18D610DB1B24742000765015 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18D610D91B24742000765015 /* Database.xcdatamodeld */; };
+		18D6110B1B27BBEB00765015 /* PersonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6110A1B27BBEB00765015 /* PersonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +42,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181299C81B2EEC6A004D01E2 /* DBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		181299CA1B2EED6F004D01E2 /* BaseBLO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBLO.swift; sourceTree = "<group>"; };
+		181299CD1B2EF190004D01E2 /* DBLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBLoader.swift; sourceTree = "<group>"; };
+		181299E31B2F0A03004D01E2 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		181299E61B2F0AAD004D01E2 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = "Fed Club Mobile/Entities/Address.swift"; sourceTree = "<group>"; };
+		181299E71B2F0AAD004D01E2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = "Fed Club Mobile/Entities/Person.swift"; sourceTree = "<group>"; };
+		181299E81B2F0AAD004D01E2 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = "Fed Club Mobile/Entities/Contact.swift"; sourceTree = "<group>"; };
+		181299E91B2F0AAD004D01E2 /* RSVP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RSVP.swift; path = "Fed Club Mobile/Entities/RSVP.swift"; sourceTree = "<group>"; };
+		181299EA1B2F0AAD004D01E2 /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Membership.swift; path = "Fed Club Mobile/Entities/Membership.swift"; sourceTree = "<group>"; };
+		181299EB1B2F0AAD004D01E2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "Fed Club Mobile/Entities/Event.swift"; sourceTree = "<group>"; };
+		181299EC1B2F0AAD004D01E2 /* Attendance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendance.swift; path = "Fed Club Mobile/Entities/Attendance.swift"; sourceTree = "<group>"; };
+		181299ED1B2F0AAD004D01E2 /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCard.swift; path = "Fed Club Mobile/Entities/CreditCard.swift"; sourceTree = "<group>"; };
+		181299F61B2F0E22004D01E2 /* EventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		181299F81B2F0E3F004D01E2 /* EventListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListVC.swift; sourceTree = "<group>"; };
+		181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSVPListVC.swift; sourceTree = "<group>"; };
 		18D610B21B2473DE00765015 /* Fed Club Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fed Club Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D610B61B2473DE00765015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D610B71B2473DE00765015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18D610B91B2473DE00765015 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		18D610BB1B2473DE00765015 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		18D610BB1B2473DE00765015 /* PersonListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListVC.swift; sourceTree = "<group>"; };
 		18D610BE1B2473DE00765015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D610C01B2473DE00765015 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18D610C31B2473DE00765015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		18D610C91B2473DE00765015 /* Fed Club MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fed Club MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D610CE1B2473DE00765015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D610CF1B2473DE00765015 /* Fed_Club_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fed_Club_MobileTests.swift; sourceTree = "<group>"; };
-		18D610DA1B24742000765015 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		18D6110A1B27BBEB00765015 /* PersonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +88,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181299CC1B2EEDB2004D01E2 /* BLOs */ = {
+			isa = PBXGroup;
+			children = (
+				181299CA1B2EED6F004D01E2 /* BaseBLO.swift */,
+			);
+			name = BLOs;
+			sourceTree = "<group>";
+		};
+		181299E51B2F0A74004D01E2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				181299E61B2F0AAD004D01E2 /* Address.swift */,
+				181299E71B2F0AAD004D01E2 /* Person.swift */,
+				181299E81B2F0AAD004D01E2 /* Contact.swift */,
+				181299E91B2F0AAD004D01E2 /* RSVP.swift */,
+				181299EA1B2F0AAD004D01E2 /* Membership.swift */,
+				181299EB1B2F0AAD004D01E2 /* Event.swift */,
+				181299EC1B2F0AAD004D01E2 /* Attendance.swift */,
+				181299ED1B2F0AAD004D01E2 /* CreditCard.swift */,
+			);
+			name = Entities;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		18D610A91B2473DE00765015 = {
 			isa = PBXGroup;
 			children = (
-				18D610D91B24742000765015 /* Database.xcdatamodeld */,
+				181299E21B2F0A03004D01E2 /* Database.xcdatamodeld */,
 				18D610B41B2473DE00765015 /* Fed Club Mobile */,
 				18D610CC1B2473DE00765015 /* Fed Club MobileTests */,
 				18D610B31B2473DE00765015 /* Products */,
@@ -83,8 +135,15 @@
 			isa = PBXGroup;
 			children = (
 				18D610B71B2473DE00765015 /* AppDelegate.swift */,
-				18D610B91B2473DE00765015 /* FirstViewController.swift */,
-				18D610BB1B2473DE00765015 /* SecondViewController.swift */,
+				181299CD1B2EF190004D01E2 /* DBLoader.swift */,
+				181299C81B2EEC6A004D01E2 /* DBService.swift */,
+				181299CC1B2EEDB2004D01E2 /* BLOs */,
+				181299E51B2F0A74004D01E2 /* Entities */,
+				18D610BB1B2473DE00765015 /* PersonListVC.swift */,
+				181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */,
+				18D6110A1B27BBEB00765015 /* PersonDetailVC.swift */,
+				181299F81B2F0E3F004D01E2 /* EventListVC.swift */,
+				181299F61B2F0E22004D01E2 /* EventDetailVC.swift */,
 				18D610BD1B2473DE00765015 /* Main.storyboard */,
 				18D610C01B2473DE00765015 /* Images.xcassets */,
 				18D610C21B2473DE00765015 /* LaunchScreen.xib */,
@@ -218,10 +277,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D610BC1B2473DE00765015 /* SecondViewController.swift in Sources */,
+				181299E41B2F0A03004D01E2 /* Database.xcdatamodeld in Sources */,
+				181299CB1B2EED6F004D01E2 /* BaseBLO.swift in Sources */,
+				181299F01B2F0AAD004D01E2 /* Contact.swift in Sources */,
+				18D610BC1B2473DE00765015 /* PersonListVC.swift in Sources */,
 				18D610B81B2473DE00765015 /* AppDelegate.swift in Sources */,
-				18D610DB1B24742000765015 /* Database.xcdatamodeld in Sources */,
-				18D610BA1B2473DE00765015 /* FirstViewController.swift in Sources */,
+				181299CE1B2EF190004D01E2 /* DBLoader.swift in Sources */,
+				181299F51B2F0AAD004D01E2 /* CreditCard.swift in Sources */,
+				181299F11B2F0AAD004D01E2 /* RSVP.swift in Sources */,
+				18D6110B1B27BBEB00765015 /* PersonDetailVC.swift in Sources */,
+				181299EF1B2F0AAD004D01E2 /* Person.swift in Sources */,
+				181299EE1B2F0AAD004D01E2 /* Address.swift in Sources */,
+				181299F41B2F0AAD004D01E2 /* Attendance.swift in Sources */,
+				181299F71B2F0E22004D01E2 /* EventDetailVC.swift in Sources */,
+				181299FD1B2F1EE3004D01E2 /* RSVPListVC.swift in Sources */,
+				181299C91B2EEC6A004D01E2 /* DBService.swift in Sources */,
+				181299F91B2F0E3F004D01E2 /* EventListVC.swift in Sources */,
+				181299F21B2F0AAD004D01E2 /* Membership.swift in Sources */,
+				181299F31B2F0AAD004D01E2 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +492,7 @@
 				18D610D51B2473DE00765015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18D610D61B2473DE00765015 /* Build configuration list for PBXNativeTarget "Fed Club MobileTests" */ = {
 			isa = XCConfigurationList;
@@ -427,17 +501,19 @@
 				18D610D81B2473DE00765015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		18D610D91B24742000765015 /* Database.xcdatamodeld */ = {
+		181299E21B2F0A03004D01E2 /* Database.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				18D610DA1B24742000765015 /* Database.xcdatamodel */,
+				181299E31B2F0A03004D01E2 /* Database.xcdatamodel */,
 			);
-			currentVersion = 18D610DA1B24742000765015 /* Database.xcdatamodel */;
-			path = Database.xcdatamodeld;
+			currentVersion = 181299E31B2F0A03004D01E2 /* Database.xcdatamodel */;
+			name = Database.xcdatamodeld;
+			path = "Fed Club Mobile.xcodeproj/Database.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
