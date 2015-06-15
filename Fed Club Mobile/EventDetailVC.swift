@@ -11,21 +11,38 @@ import UIKit
 
 class EventDetailVC: UITableViewController {
     
+    // Outlets
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var venue: UILabel!
+    @IBOutlet weak var id: UILabel!
+    @IBOutlet weak var attendees: UILabel!
+    @IBOutlet weak var rsvps: UILabel!
+    @IBOutlet weak var openRsvps: UILabel!
     
+    // Controller Entity
     var event: Event?
     
+    // Attendee Count Summary
+    var attendeeCount:  NSNumber = 0
+    var rsvpCount:  NSNumber = 0
+    var openRsvpCount:  NSNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set Navigation Bar Background Graphic and Title
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "rainbow-header")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
-        
-        //url.text = technology!.url
-        //pocEmail.text = technology!.pocEmail
-        //poc.text = technology!.poc
-        //techDescription.text = technology!.techDescription
-        //image.image = UIImage(named: technology!.image)
         self.title = event!.name
+        
+        // Count Up Attendees
+        
+        // Populate Detail View Values from Controller Entity
+        name.text = event?.name
+        venue.text = event?.venue
+        id.text = event?.id.stringValue
+        attendees.text = attendeeCount.stringValue
+        rsvps.text = rsvpCount.stringValue
+        openRsvps.text = openRsvpCount.stringValue
     }
     
     override func viewDidLayoutSubviews() {

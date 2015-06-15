@@ -159,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcC-us-DHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="359"/>
+            <point key="canvasLocation" x="1449" y="359"/>
         </scene>
         <!--Event Detail Controller-->
         <scene sceneID="vBg-ca-Ovm">
@@ -335,6 +335,15 @@
                             <outlet property="delegate" destination="Cbh-Ty-zfa" id="QAe-Ls-Hf7"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="attendees" destination="MZV-Lg-Ma3" id="DuS-5M-Pod"/>
+                        <outlet property="date" destination="Pvp-Oe-Qem" id="rn0-C3-zBh"/>
+                        <outlet property="id" destination="4NW-g4-U8K" id="W85-Lo-FLV"/>
+                        <outlet property="name" destination="sYd-2i-4id" id="STO-y6-H5T"/>
+                        <outlet property="openRsvps" destination="1go-a5-qqu" id="Irq-eQ-O3i"/>
+                        <outlet property="rsvps" destination="Hgp-7U-SNZ" id="SoQ-td-Vq6"/>
+                        <outlet property="venue" destination="ObG-4h-1mp" id="oXP-Na-snR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkV-u2-0Jm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -667,6 +676,20 @@
                     </tableView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="address" destination="kkh-cw-hwS" id="e3y-ov-Gvn"/>
+                        <outlet property="cardNumber" destination="ktC-cN-de3" id="PZ3-Hc-SLA"/>
+                        <outlet property="ccv" destination="GkD-YO-0UW" id="az6-hk-9fE"/>
+                        <outlet property="city" destination="psD-2i-rrf" id="1Sy-kh-ezE"/>
+                        <outlet property="email" destination="Scx-1c-tXd" id="gKB-8s-H2d"/>
+                        <outlet property="firstName" destination="z8L-rP-E93" id="bjI-SH-YgG"/>
+                        <outlet property="lastName" destination="wGD-OF-bam" id="1K6-Td-Avd"/>
+                        <outlet property="membership" destination="kbI-wK-ttW" id="CkA-SQ-ukE"/>
+                        <outlet property="phone" destination="rjx-h8-uh1" id="NPC-dh-TqY"/>
+                        <outlet property="state" destination="Pbs-be-VpE" id="ckn-UX-CZ9"/>
+                        <outlet property="unit" destination="kOd-AF-S6Y" id="tBf-4I-RqM"/>
+                        <outlet property="zip" destination="rVs-Os-Z6d" id="PMV-sD-wbm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dC2-K9-agf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

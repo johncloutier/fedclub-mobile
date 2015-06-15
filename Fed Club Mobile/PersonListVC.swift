@@ -73,7 +73,7 @@ class PersonListVC: UITableViewController, UISearchResultsUpdating{
         {
             if(searchController.searchBar.text != ""){
                 filteredTableData.removeAll(keepCapacity: false)
-                let searchPredicate = NSPredicate(format: "SELF.name CONTAINS[c] %@", searchController.searchBar.text)
+                let searchPredicate = NSPredicate(format: "SELF.lastName CONTAINS[c] %@ OR SELF.firstName CONTAINS[c] %@", searchController.searchBar.text)
                 let array = (persons as NSArray).filteredArrayUsingPredicate(searchPredicate)
                 filteredTableData = array as! [Person]
                 self.tableView.reloadData()
