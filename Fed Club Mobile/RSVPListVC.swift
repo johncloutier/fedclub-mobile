@@ -20,7 +20,6 @@ class RSVPListVC: UITableViewController, UISearchResultsUpdating{
         super.viewDidLoad()
         
         // Initialize BLO and load list of people
-        baseBLO = BaseBLO()
         rsvps = baseBLO.getAllRSVPs()
         rsvps = sorted(rsvps){ $0.person.lastName.lowercaseString < $1.person.lastName.lowercaseString }
         
@@ -99,8 +98,14 @@ class RSVPListVC: UITableViewController, UISearchResultsUpdating{
                 resultSearchController.active = false
             }
         }
+        else if segue.identifier == "addNewPersonSegue"
+        {
+            if let destinationVC = segue.destinationViewController as? PersonDetailVC{
+                //destinationVC.person = svc.getNewEntityByType("Person") as! Person
+                resultSearchController.active = false
+            }
+        }
     }
-    
     
     
     

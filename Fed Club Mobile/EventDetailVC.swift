@@ -14,6 +14,7 @@ class EventDetailVC: UITableViewController {
     // Outlets
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var venue: UILabel!
+    @IBOutlet weak var date: UILabel!
     @IBOutlet weak var id: UILabel!
     @IBOutlet weak var attendees: UILabel!
     @IBOutlet weak var rsvps: UILabel!

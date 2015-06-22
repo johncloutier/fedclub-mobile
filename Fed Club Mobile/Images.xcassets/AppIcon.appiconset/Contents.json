@@ -21,15 +21,14 @@
       "scale" : "3x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "hrc 180-2.png",
+      "size" : "60x60",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "hrc 180-1.png",
+      "filename" : "hrc small 180.png",
       "scale" : "3x"
     },
     {

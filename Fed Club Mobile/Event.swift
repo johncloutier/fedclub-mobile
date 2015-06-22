@@ -12,7 +12,7 @@ import CoreData
 @objc(Event)
 class Event: NSManagedObject {
 
-    @NSManaged var date: NSDate
+    @NSManaged var date: String
     @NSManaged var id: NSNumber
     @NSManaged var name: String
     @NSManaged var venue: String

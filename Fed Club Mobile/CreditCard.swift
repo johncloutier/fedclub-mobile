@@ -13,7 +13,7 @@ import CoreData
 class CreditCard: NSManagedObject {
 
     @NSManaged var ccv: NSNumber
-    @NSManaged var expDate: NSDate
+    @NSManaged var expDate: String
     @NSManaged var expMonth: NSNumber
     @NSManaged var expYear: NSNumber
     @NSManaged var number: NSNumber

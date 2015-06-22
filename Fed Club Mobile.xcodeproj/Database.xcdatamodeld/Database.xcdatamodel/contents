@@ -19,14 +19,14 @@
     </entity>
     <entity name="CreditCard" representedClassName="CreditCard" syncable="YES">
         <attribute name="ccv" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="expDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="expDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="expMonth" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="expYear" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="creditCard" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES">
-        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="venue" optional="YES" attributeType="String" syncable="YES"/>

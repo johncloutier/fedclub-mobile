@@ -42,11 +42,12 @@ class PersonListVC: UITableViewController, UISearchResultsUpdating{
         
         override func viewWillAppear(animated: Bool) {
             super.viewWillAppear(animated)
+            persons = baseBLO.getAllPersons()
+            persons = sorted(persons){ $0.lastName.lowercaseString < $1.lastName.lowercaseString }
             self.tableView.reloadData()
         }
         
         override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            
             if (self.resultSearchController.active) {
                 return self.filteredTableData.count
             }
@@ -64,7 +65,7 @@ class PersonListVC: UITableViewController, UISearchResultsUpdating{
                 return cell
             }
             else {
-                cell.textLabel?.text = persons[indexPath.row].firstName + " " + persons[indexPath.row].firstName
+                cell.textLabel?.text = persons[indexPath.row].firstName + " " + persons[indexPath.row].lastName
                 return cell
             }
         }
@@ -100,9 +101,11 @@ class PersonListVC: UITableViewController, UISearchResultsUpdating{
                 }
             }
         }
-        
-        
-        
+    
+
+    
+    
+    
     
 }
 

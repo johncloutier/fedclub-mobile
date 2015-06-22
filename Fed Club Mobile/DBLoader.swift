@@ -22,6 +22,7 @@ class DBLoader: NSObject{
     func loadDB(){
         if dbEmpty(){
             loadMemberships()
+            loadEvents()
             svc.saveContext()
         }
     }
@@ -58,19 +59,19 @@ class DBLoader: NSObject{
         let event1: Event = svc.getNewEntityByType("Event") as! Event
         event1.name = "Fed Club Happy Hour"
         event1.venue = "Brixton"
-        event1.date = NSDate()
+        event1.date = "June 3, 6:30pm"
         event1.id = 123456789
         
         let event2: Event = svc.getNewEntityByType("Event") as! Event
         event2.name = "Bear Happy Hour"
         event2.venue = "Town"
-        event2.date = NSDate()
+        event2.date = "April 30, 6:00pm"
         event2.id = 234567890
         
         let event3: Event = svc.getNewEntityByType("Event") as! Event
         event3.name = "Night at Nellies"
         event3.venue = "Nellies"
-        event3.date = NSDate()
+        event3.date = "September 23, 8:00pm"
         event3.id = 345678901
     }
     

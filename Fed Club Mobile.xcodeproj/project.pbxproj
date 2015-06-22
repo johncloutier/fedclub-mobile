@@ -22,6 +22,7 @@
 		18ABC5161B2F3DD4001A4771 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC5151B2F3DD4001A4771 /* CreditCard.swift */; };
 		18ABC5181B2F3DD4001A4771 /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC5171B2F3DD4001A4771 /* Membership.swift */; };
 		18ABC51A1B2F3DD4001A4771 /* RSVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC5191B2F3DD4001A4771 /* RSVP.swift */; };
+		18D30FFD1B37004F00CCAC8D /* CheckInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D30FFC1B37004F00CCAC8D /* CheckInVC.swift */; };
 		18D610B81B2473DE00765015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610B71B2473DE00765015 /* AppDelegate.swift */; };
 		18D610BC1B2473DE00765015 /* PersonListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D610BB1B2473DE00765015 /* PersonListVC.swift */; };
 		18D610BF1B2473DE00765015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D610BD1B2473DE00765015 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		18ABC5151B2F3DD4001A4771 /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCard.swift; path = "Fed Club Mobile/CreditCard.swift"; sourceTree = "<group>"; };
 		18ABC5171B2F3DD4001A4771 /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Membership.swift; path = "Fed Club Mobile/Membership.swift"; sourceTree = "<group>"; };
 		18ABC5191B2F3DD4001A4771 /* RSVP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RSVP.swift; path = "Fed Club Mobile/RSVP.swift"; sourceTree = "<group>"; };
+		18D30FFC1B37004F00CCAC8D /* CheckInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInVC.swift; sourceTree = "<group>"; };
 		18D610B21B2473DE00765015 /* Fed Club Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fed Club Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D610B61B2473DE00765015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D610B71B2473DE00765015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,9 +141,10 @@
 				181299C81B2EEC6A004D01E2 /* DBService.swift */,
 				181299CC1B2EEDB2004D01E2 /* BLOs */,
 				181299E51B2F0A74004D01E2 /* Entities */,
+				18D30FFC1B37004F00CCAC8D /* CheckInVC.swift */,
+				181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */,
 				18D610BB1B2473DE00765015 /* PersonListVC.swift */,
 				18D6110A1B27BBEB00765015 /* PersonDetailVC.swift */,
-				181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */,
 				181299F81B2F0E3F004D01E2 /* EventListVC.swift */,
 				181299F61B2F0E22004D01E2 /* EventDetailVC.swift */,
 				18D610BD1B2473DE00765015 /* Main.storyboard */,
@@ -286,6 +289,7 @@
 				18D610B81B2473DE00765015 /* AppDelegate.swift in Sources */,
 				181299CE1B2EF190004D01E2 /* DBLoader.swift in Sources */,
 				18ABC5181B2F3DD4001A4771 /* Membership.swift in Sources */,
+				18D30FFD1B37004F00CCAC8D /* CheckInVC.swift in Sources */,
 				18D6110B1B27BBEB00765015 /* PersonDetailVC.swift in Sources */,
 				18ABC5121B2F3DD3001A4771 /* Contact.swift in Sources */,
 				18ABC50E1B2F3DD3001A4771 /* Attendance.swift in Sources */,
