@@ -32,12 +32,17 @@ class PersonDetailVC: UITableViewController {
     var person: Person?
     var isnew = false
     var svc = DBService()
+    var blo = BaseBLO()
+    var mems: [Membership] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set Navigation Bar Background Graphic and Title
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "rainbow-header")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
+        
+        // Load Enums
+        mems = blo.getAllMemberships()
         
         // Populate Detail View Values from Controller Entity
         if(person != nil){
@@ -69,9 +74,9 @@ class PersonDetailVC: UITableViewController {
     
     @IBAction func save(sender: UIButton) {
         let newPerson = svc.getNewEntityByType("Person") as! Person
-        let newAddress = svc.getNewEntityByType("Address") as! Address
-        let newContact = svc.getNewEntityByType("Contact") as! Contact
-        let newCreditCard = svc.getNewEntityByType("CreditCard") as! CreditCard
+        newPerson.address = svc.getNewEntityByType("Address") as! Address
+        newPerson.contact = svc.getNewEntityByType("Contact") as! Contact
+        newPerson.creditCard = svc.getNewEntityByType("CreditCard") as! CreditCard
         
         newPerson.firstName = firstName.text
         newPerson.lastName = lastName.text
@@ -84,16 +89,16 @@ class PersonDetailVC: UITableViewController {
         newPerson.contact.phone = phone.text
         newPerson.creditCard.expDate = expDate.text
         
-        println(cardNumber.text)
-        
         if cardNumber.text != "" {
             newPerson.creditCard.number = cardNumber.text.toInt()!
         }
         if ccv.text != "" {
             newPerson.creditCard.ccv = ccv.text.toInt()!
         }
+
+        let searchPredicate = NSPredicate(format: "SELF.label CONTAINS[c] %@", membership.text)
+        newPerson.membership = (mems as NSArray).filteredArrayUsingPredicate(searchPredicate)[0] as! Membership
         
-        newPerson.membership.label = membership.text
         svc.saveContext()
         
         let parent = self.presentingViewController as? UITableViewController

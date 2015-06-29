@@ -33,4 +33,8 @@ class BaseBLO: NSObject{
         return svc.getEntityList("RSVP") as! [RSVP]
     }
     
+    func getAllMemberships() -> [Membership]{
+        return svc.getEntityList("Membership") as! [Membership]
+    }
+    
 }
