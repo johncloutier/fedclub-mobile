@@ -614,11 +614,11 @@
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MM/YYYY" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24J-BC-vuy">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MM/YYYY" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24J-BC-vuy">
                                                     <rect key="frame" x="107" y="7" width="485" height="30"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -819,7 +819,7 @@
         <image name="smile" width="30" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kug-fX-Mb0"/>
         <segue reference="By6-fp-Eo2"/>
+        <segue reference="nwn-BF-uaw"/>
     </inferredMetricsTieBreakers>
 </document>

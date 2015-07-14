@@ -14,6 +14,5 @@ class Membership: NSManagedObject {
 
     @NSManaged var label: String
     @NSManaged var type: NSNumber
-    @NSManaged var person: Person
 
 }

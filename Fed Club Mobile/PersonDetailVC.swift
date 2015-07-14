@@ -31,7 +31,7 @@ class PersonDetailVC: UITableViewController {
     // Controller Entities
     var person: Person?
     var isnew = false
-    var svc = DBService()
+    var svc: DBService!
     var blo = BaseBLO()
     var mems: [Membership] = []
     
@@ -40,6 +40,10 @@ class PersonDetailVC: UITableViewController {
         
         // Set Navigation Bar Background Graphic and Title
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "rainbow-header")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
+        
+        // Get DBService from AppDelegate
+        let appDelegate: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+        svc = appDelegate.dbService
         
         // Load Enums
         mems = blo.getAllMemberships()
@@ -96,7 +100,7 @@ class PersonDetailVC: UITableViewController {
             newPerson.creditCard.ccv = ccv.text.toInt()!
         }
 
-        let searchPredicate = NSPredicate(format: "SELF.label CONTAINS[c] %@", membership.text)
+        let searchPredicate = NSPredicate(format: "SELF.label == %@", membership.text)
         newPerson.membership = (mems as NSArray).filteredArrayUsingPredicate(searchPredicate)[0] as! Membership
         
         svc.saveContext()
