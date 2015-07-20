@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PersonDetailVC: UITableViewController {
+class PersonDetailVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     // Outlets
     @IBOutlet weak var firstName: UITextField!
@@ -25,20 +25,61 @@ class PersonDetailVC: UITableViewController {
     @IBOutlet weak var expDate: UITextField!
     @IBOutlet weak var ccv: UITextField!
     @IBOutlet weak var membership: UITextField!
-    
 
+    
+    @IBAction func selectDate(sender: UITextField) {
+        var datePickerView: UIDatePicker = UIDatePicker()
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: Selector("handleDatePicker:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    func handleDatePicker(sender: UIDatePicker) {
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/yyyy"
+        expDate.text = dateFormatter.stringFromDate(sender.date)
+    }
+    
+    @IBAction func selectMembership(sender: UITextField) {
+        var membershipPickerView: UIPickerView = UIPickerView()
+        sender.inputView = membershipPickerView
+        membershipPickerView.dataSource = self
+        membershipPickerView.delegate = self
+    }
+    
+    func numberOfComponentsInPickerView(membershipPicker: UIPickerView) -> Int
+    {
+        return 1;
+    }
+    
+    func pickerView(membershipPicker: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    {
+        return memberships.count;
+    }
+    
+    func pickerView(membershipPicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String
+    {
+        return memberships[row].label
+    }
+    
+    func pickerView(membershipPicker: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        membership!.text = memberships[row].label
+    }
+    
+    
     
     // Controller Entities
     var person: Person?
     var isnew = false
     var svc: DBService!
     var blo = BaseBLO()
-    var mems: [Membership] = []
+    var memberships: [Membership] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set Navigation Bar Background Graphic and Title
+            // Set Navigation Bar Background Graphic and Title
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "rainbow-header")!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .Stretch), forBarMetrics: .Default)
         
         // Get DBService from AppDelegate
@@ -46,7 +87,7 @@ class PersonDetailVC: UITableViewController {
         svc = appDelegate.dbService
         
         // Load Enums
-        mems = blo.getAllMemberships()
+        memberships = blo.getAllMemberships()
         
         // Populate Detail View Values from Controller Entity
         if(person != nil){
@@ -101,7 +142,7 @@ class PersonDetailVC: UITableViewController {
         }
 
         let searchPredicate = NSPredicate(format: "SELF.label == %@", membership.text)
-        newPerson.membership = (mems as NSArray).filteredArrayUsingPredicate(searchPredicate)[0] as! Membership
+        newPerson.membership = (memberships as NSArray).filteredArrayUsingPredicate(searchPredicate)[0] as! Membership
         
         svc.saveContext()
         
@@ -115,6 +156,6 @@ class PersonDetailVC: UITableViewController {
     @IBAction func cancel(sender: UIButton) {
     }
     
-    
+
     
 }

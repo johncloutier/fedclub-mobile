@@ -14,7 +14,7 @@
 		181299F71B2F0E22004D01E2 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299F61B2F0E22004D01E2 /* EventDetailVC.swift */; };
 		181299F91B2F0E3F004D01E2 /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299F81B2F0E3F004D01E2 /* EventListVC.swift */; };
 		181299FD1B2F1EE3004D01E2 /* RSVPListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */; };
-		1853DE041B549AD200A0960C /* MembershipPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853DE031B549AD200A0960C /* MembershipPicker.xib */; };
+		1853DE061B55D0E200A0960C /* MembershipPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853DE051B55D0E200A0960C /* MembershipPickerVC.swift */; };
 		18ABC50C1B2F3DD3001A4771 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC50B1B2F3DD3001A4771 /* Address.swift */; };
 		18ABC50E1B2F3DD3001A4771 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC50D1B2F3DD3001A4771 /* Attendance.swift */; };
 		18ABC5101B2F3DD3001A4771 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC50F1B2F3DD3001A4771 /* Event.swift */; };
@@ -51,7 +51,7 @@
 		181299F61B2F0E22004D01E2 /* EventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		181299F81B2F0E3F004D01E2 /* EventListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListVC.swift; sourceTree = "<group>"; };
 		181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSVPListVC.swift; sourceTree = "<group>"; };
-		1853DE031B549AD200A0960C /* MembershipPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembershipPicker.xib; sourceTree = "<group>"; };
+		1853DE051B55D0E200A0960C /* MembershipPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipPickerVC.swift; sourceTree = "<group>"; };
 		18ABC50B1B2F3DD3001A4771 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = "Fed Club Mobile/Address.swift"; sourceTree = "<group>"; };
 		18ABC50D1B2F3DD3001A4771 /* Attendance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendance.swift; path = "Fed Club Mobile/Attendance.swift"; sourceTree = "<group>"; };
 		18ABC50F1B2F3DD3001A4771 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "Fed Club Mobile/Event.swift"; sourceTree = "<group>"; };
@@ -147,10 +147,10 @@
 				181299FC1B2F1EE3004D01E2 /* RSVPListVC.swift */,
 				18D610BB1B2473DE00765015 /* PersonListVC.swift */,
 				18D6110A1B27BBEB00765015 /* PersonDetailVC.swift */,
+				1853DE051B55D0E200A0960C /* MembershipPickerVC.swift */,
 				181299F81B2F0E3F004D01E2 /* EventListVC.swift */,
 				181299F61B2F0E22004D01E2 /* EventDetailVC.swift */,
 				18D610BD1B2473DE00765015 /* Main.storyboard */,
-				1853DE031B549AD200A0960C /* MembershipPicker.xib */,
 				18D610C01B2473DE00765015 /* Images.xcassets */,
 				18D610C21B2473DE00765015 /* LaunchScreen.xib */,
 				18D610B51B2473DE00765015 /* Supporting Files */,
@@ -267,7 +267,6 @@
 				18D610BF1B2473DE00765015 /* Main.storyboard in Resources */,
 				18D610C41B2473DE00765015 /* LaunchScreen.xib in Resources */,
 				18D610C11B2473DE00765015 /* Images.xcassets in Resources */,
-				1853DE041B549AD200A0960C /* MembershipPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +294,7 @@
 				18ABC5181B2F3DD4001A4771 /* Membership.swift in Sources */,
 				18D30FFD1B37004F00CCAC8D /* CheckInVC.swift in Sources */,
 				18D6110B1B27BBEB00765015 /* PersonDetailVC.swift in Sources */,
+				1853DE061B55D0E200A0960C /* MembershipPickerVC.swift in Sources */,
 				18ABC5121B2F3DD3001A4771 /* Contact.swift in Sources */,
 				18ABC50E1B2F3DD3001A4771 /* Attendance.swift in Sources */,
 				181299F71B2F0E22004D01E2 /* EventDetailVC.swift in Sources */,
